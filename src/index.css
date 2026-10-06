@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0916;
+}
+::-webkit-scrollbar-thumb {
+  background: #6a1b9a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8e24aa;
+}
+
+/* Pulsing glow */
+@keyframes pulseGlowEmerald {
+  0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.35); }
+  50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.7); }
+}
+
+@keyframes pulseGlowRose {
+  0%, 100% { box-shadow: 0 0 15px rgba(244, 63, 94, 0.35); }
+  50% { box-shadow: 0 0 30px rgba(244, 63, 94, 0.7); }
+}
+
+.glow-emerald {
+  animation: pulseGlowEmerald 2.5s infinite ease-in-out;
+}
+
+.glow-rose {
+  animation: pulseGlowRose 2.5s infinite ease-in-out;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
