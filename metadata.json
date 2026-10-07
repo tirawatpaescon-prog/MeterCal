@@ -1,6 +1,6 @@
 {
   "name": "PEA Induction Disc Meter Testing System (ระบบคำนวณและตรวจสอบมิเตอร์จานหมุน PEA)",
-  "description": "ระบบคำนวณและตรวจสอบความคลาดเคลื่อนมิเตอร์ไฟฟ้าจานหมุนตามมาตรฐานการไฟฟ้าส่วนภูมิภาค (PEA ±2%) พร้อมนาฬิกาจับเวลาและระบบบันทึกประวัติการทดสอบภาคสนาม",
+  "description": "ระบบคำนวณและตรวจสอบความคลาดเคลื่อนมิเตอร์ไฟฟ้าจานหมุน (PEA ±2%) ",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

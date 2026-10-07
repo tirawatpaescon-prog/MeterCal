@@ -167,7 +167,7 @@ export default function App() {
   }, []);
 
   const handleClearAllHistory = useCallback(() => {
-    if (window.confirm('คุณต้องการลบประวัติการคำนวณทั้งหมดใช่หรือไม่?')) {
+    if (window.confirm('ต้องการลบประวัติการคำนวณทั้งหมดใช่หรือไม่?')) {
       setHistory([]);
       localStorage.removeItem(STORAGE_KEY_HISTORY);
     }
@@ -227,7 +227,7 @@ export default function App() {
         {/* Footer */}
         <footer className="mt-10 py-6 text-center text-xs text-purple-400/60 border-t border-purple-950 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>PEA Induction Disc Meter Inspection System • การไฟฟ้าส่วนภูมิภาค</span>
-          <span>เกณฑ์มาตรฐานความคลาดเคลื่อนยอมรับได้: ±2.00%</span>
+          <span>มาตรฐานความคลาดเคลื่อน: ±2.00%</span>
         </footer>
       </div>
 
